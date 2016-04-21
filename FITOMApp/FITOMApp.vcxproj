@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B04CDE73-6C3C-46E1-B430-CC893CED7BF6}</ProjectGuid>
+    <RootNamespace>FITOMApp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADPCM.h" />
+    <ClInclude Include="DevMonitor.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="TestButton.h" />
+    <ClInclude Include="VoiceEditDlg.h" />
+    <ClInclude Include="VoicePicker.h" />
+    <ClInclude Include="FITOM.h" />
+    <ClInclude Include="FITOMApp.h" />
+    <ClInclude Include="FITOMAppDlg.h" />
+    <ClInclude Include="FMS.h" />
+    <ClInclude Include="MIDI.h" />
+    <ClInclude Include="MidiChCtrlDlg.h" />
+    <ClInclude Include="MIDIDEV.h" />
+    <ClInclude Include="MidiMonitor.h" />
+    <ClInclude Include="MultiDev.h" />
+    <ClInclude Include="OPK.h" />
+    <ClInclude Include="OPL.h" />
+    <ClInclude Include="OPLL.h" />
+    <ClInclude Include="OPM.h" />
+    <ClInclude Include="OPN.h" />
+    <ClInclude Include="Port.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="scci.h" />
+    <ClInclude Include="SCCIDefines.h" />
+    <ClInclude Include="SoundDev.h" />
+    <ClInclude Include="SSG.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tables.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TYPES.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADPCM.cpp" />
+    <ClCompile Include="DevMonitor.cpp" />
+    <ClCompile Include="GridCtrl.cpp" />
+    <ClCompile Include="TestButton.cpp" />
+    <ClCompile Include="VoiceEditDlg.cpp" />
+    <ClCompile Include="VoicePicker.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="ConfigW.cpp" />
+    <ClCompile Include="EnvLFO.cpp" />
+    <ClCompile Include="FITOM.cpp" />
+    <ClCompile Include="FITOMApp.cpp" />
+    <ClCompile Include="FITOMAppDlg.cpp" />
+    <ClCompile Include="FMS.cpp" />
+    <ClCompile Include="Fnum.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MIDI.cpp" />
+    <ClCompile Include="MidiChCtrlDlg.cpp" />
+    <ClCompile Include="MidiMonitor.cpp" />
+    <ClCompile Include="MIDIWin.cpp" />
+    <ClCompile Include="MultiDev.cpp" />
+    <ClCompile Include="OPK.cpp" />
+    <ClCompile Include="OPL.cpp" />
+    <ClCompile Include="OPL3.cpp" />
+    <ClCompile Include="OPLL.cpp" />
+    <ClCompile Include="OPM.cpp" />
+    <ClCompile Include="OPN.cpp" />
+    <ClCompile Include="OPN2.cpp" />
+    <ClCompile Include="Port.cpp" />
+    <ClCompile Include="SoundDev.cpp" />
+    <ClCompile Include="SpanDev.cpp" />
+    <ClCompile Include="SSG.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stereo.cpp" />
+    <ClCompile Include="Unison.cpp" />
+    <ClCompile Include="VoiceBank.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FITOMApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FITOMApp.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\FITOMApp.ico" />
+    <Image Include="res\fitom_logo.bmp" />
+    <Image Include="res\fitom_logo.png" />
+    <Image Include="res\opn_al0.bmp" />
+    <Image Include="res\opn_al1.bmp" />
+    <Image Include="res\opn_al2.bmp" />
+    <Image Include="res\opn_al3.bmp" />
+    <Image Include="res\opn_al4.bmp" />
+    <Image Include="res\opn_al5.bmp" />
+    <Image Include="res\opn_al6.bmp" />
+    <Image Include="res\opn_al7.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FITOMApp.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
