@@ -1,0 +1,24 @@
+35,Acoustic Bass Drum,OPL,5,112,48,0,20
+36,Bass Drum 1,OPL,5,31,48,0,20
+37,Side Stick,OPL,5,113,76,0,20
+38,Acoustic Snare,OPL,5,30,76,0,50
+40,Electric Snare,OPL,5,120,69,0,50
+41,Low Floor Tom,OPL,5,94,48,0,50
+42,Closed Hi Hat,OPL,5,115,120,0,10
+43,High Floor Tom,OPL,5,94,53,0,50
+44,Pedal Hi-Hat,OPL,5,115,120,0,20
+45,Low Tom,OPL,5,94,59,0,50
+46,Open Hi-Hat,OPL,5,116,120,0,50
+47,Low-Mid Tom,OPL,5,94,65,0,50
+48,Hi-Mid Tom,OPL,5,94,69,0,50
+49,Crash Cymbal 1,OPL,5,118,24,0,100
+50,High Tom,OPL,5,94,72,0,50
+51,Ride Cymbal 1,OPL,5,117,120,0,100
+52,Chinese Cymbal,OPL,5,118,36,0,100
+53,Ride Bell,OPL,5,117,120,0,100
+55,Splash Cymbal,OPL,5,118,24,0,100
+56,Cowbell,OPL,5,28,84,0,10
+57,Crash Cymbal 2,OPL,5,118,24,0,100
+59,Ride Cymbal 2,OPL,5,117,120,0,100
+60,Hi Bongo,OPL,5,112,72,0,20
+61,Low Bongo,OPL,5,112,65,0,20
